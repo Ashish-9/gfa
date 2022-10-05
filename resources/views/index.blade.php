@@ -86,7 +86,7 @@
 				<a href="" class="logo-small"> <img src="assets/logo-small2.png"></a>
 
 				<ul class="fixed-menu">
-					<li><a href="index.html#about_us" data-section="about_us">About</a>
+					<li><a href="index#about_.htmlus" data-section="about_us">About</a>
 					</li>
 					<li><a href="index.html#category" data-section="category">Categories</a></li>
 					<li><a href="index.html#spons" data-section="spons">Sponsors</a></li>

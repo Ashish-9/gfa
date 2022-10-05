@@ -846,6 +846,7 @@
                                                             <li>IFSC: <b>UTIB0000375</b></li>
                                                         </ul>
                                                     </p>
+                                                    <p id="amount" style="font-weight: bold;"></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -908,10 +909,27 @@
             checks[i].onclick = selectiveCheck;
             function selectiveCheck (event) {
             var checkedChecks = document.querySelectorAll(".cat_check:checked");
+            
             if (checkedChecks.length >= max + 1)
                 return false;
                 if(checkedChecks.length == max){
                     alert("Can apply for up to 5 categories only!");
+                }
+                if(checkedChecks.length == 1){
+                    document.getElementById("amount").innerHTML = "";
+                    document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹3000/- Only";
+                }else if(checkedChecks.length == 2){
+                    document.getElementById("amount").innerHTML = "";
+                    document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹4000/- Only";
+                }else if(checkedChecks.length == 3){
+                    document.getElementById("amount").innerHTML = "";
+                    document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹5000/- Only";
+                }else if(checkedChecks.length == 4){
+                    document.getElementById("amount").innerHTML = "";
+                    document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹6000/- Only";
+                }else{
+                    document.getElementById("amount").innerHTML = "";
+                    document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹7000/- Only";
                 }
             }
     </script>
