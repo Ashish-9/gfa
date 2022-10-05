@@ -91,7 +91,7 @@
 					<li><a href="index.html#category" data-section="category">Categories</a></li>
 					<li><a href="index.html#spons" data-section="spons">Sponsors</a></li>
 					<li><a href="index.html" data-section="every">Everything Else</a></li>
-					<li><a href="register" data-section="every">Register</a></li>
+					<li><a href="{{ Route('registeration') }}" data-section="every">Register</a></li>
 
 					<li><a href="https://www.guwahatifoodawards.in/voting" data-section="every">Vote Now</a></li>
 				</ul>	
@@ -123,7 +123,7 @@
 								</div>
 
 							</li>
-							<li><a href="register" data-section="every">Register</a></li>
+							<li><a href="{{ Route('registeration') }}" data-section="every">Register</a></li>
 							<li><a href="comingsoon.html" data-section="every">Vote Now</a></li>
 						</ul>
 

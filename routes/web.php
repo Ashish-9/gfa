@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::match(['get', 'post'], '/registeration', [RegistrationController::class, 'store'])->name('registeration');
+Route::match(['get', 'post'], '/registration', [RegistrationController::class, 'store'])->name('registeration');
 
 // Route::get('/register',function(){
 //     return view('register-index');
@@ -29,7 +29,7 @@ Route::get('/home', [HomeController::class,'index'])->name('admin.dashboard');
 Route::match(['get', 'post'], '/admin/login', [HomeController::class, 'login'])->name('admin.login');
 Route::get('/admin/print', [HomeController::class, 'printAll'])->name('admin.print');
 
-Auth::routes(['register' => false]);
+Auth::routes(['/register' => false]);
 
 
 Auth::routes();

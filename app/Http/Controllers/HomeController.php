@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\RegistrationsExport;
 use App\Models\Registration;
+use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use PDF;
@@ -26,31 +28,22 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $registered = DB::table('registrations as r')
-                        ->select('r.*','ls.legal_status_name','or.outlet_rating_name','a.advertise_name')
-                        ->join('legal_status as ls','ls.id','r.legal_status_id')
-                        ->join('advertise as a','a.id','r.advertise_id')
-                        ->join('outlet_rating as or','or.id','r.outlet_rating_id')
-                        ->where('r.status', true)
+        $registered = Registration::where('status', true)
                         ->orderBy('created_at')
-                        ->paginate(2);
-        // return $registered;
+                        ->simplePaginate(2);
+        return $registered;
         return view('home', ['registered'=>$registered]);
     }
 
     public function printAll(){
-       $registered = DB::table('registrations as r')
-                    ->select('r.*','ls.legal_status_name','or.outlet_rating_name','a.advertise_name')
-                    ->join('legal_status as ls','ls.id','r.legal_status_id')
-                    ->join('advertise as a','a.id','r.advertise_id')
-                    ->join('outlet_rating as or','or.id','r.outlet_rating_id')
-                    ->where('r.status', true)
-                    ->get();
-        $data = [
-            'registered'=>$registered
-        ];
-        view()->share($data);
-        $pdf = PDF::loadView('print')->setPaper('a4');
-        return $pdf->inline('print_all.pdf');
+        return Excel::download(new RegistrationsExport, 'registration.xlsx');
+        // $registered = Registration::where('status', true)
+        // ->get();
+        // $data = [
+        //     'registered'=>$registered
+        // ];
+        // view()->share($data);
+        // $pdf = PDF::loadView('print')->setPaper('a4');
+        // return $pdf->inline('print_all.pdf');
     }
 }

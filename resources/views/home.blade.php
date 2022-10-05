@@ -10,7 +10,7 @@
                       <h3 class="p-3">{{ __('Dashboard') }}</h3>
                     </div>
                     <div class="col-md-2 float-right">
-                      <a class="btn btn-sm btn-success p-3" target="_blank" href={{ Route('admin.print') }}>Print All</a>
+                      <a class="btn btn-sm btn-success p-3" target="_blank" href={{ Route('admin.print') }}>Export All</a>
                     </div>
                 <div class="card-body">
                     @if (session('status'))
@@ -53,13 +53,19 @@
                                             <label class="form-label "> <b>Business address:</b></label><br> {{ $register->business_address}}<br>
                                             <label class="form-label "> <b>Phone:</b></label> <br>{{ $register->phone }}<br>
                                             <label class="form-label "> <b>Email: </b></label><br> {{ $register->email }}<br>
-                                            <label class="form-label "> <b>Website: </b></label> <br>{{ $register->website }}
+                                            <label class="form-label "> <b>Website: </b></label> <br>{{ $register->website }}<br>
+                                            <label class="form-label "> <b>Type of Restaurant: </b></label> <br>{{ $register->fran_type?'Franchise':'Non-Franchise' }}<br>
+                                            <label class="form-label "> <b>Menu Options: </b></label> <br>{{ $register->food_type }}<br>
+                                            <label class="form-label "> <b>Average Order Value per person: </b></label> <br>{{ $register->order_value_type }}<br>
+                                            <label class="form-label "> <b>Service: </b></label> <br>{{ $register->service_type }}<br>
+                                            <label class="form-label "> <b>Available in: </b></label> <br>{{ $register->available_in }}<br>
                                         </td>
                                         <td class="text-nowrap">
                                             <label class="form-label "> <b>In which month/ year was the business started? : </b></label> <br>{{ $register->business_start_year }}<br>
-                                            <label class="form-label "> <b>What is the legal status of the Enterprise? : </b></label><br>{{ $register->legal_status_name }} <br>
+                                            <label class="form-label "> <b>What is the legal status of the Enterprise? : </b></label><br>{{ $register->legal_status }} <br>
+                                            @if($register->legal_status == 'Other')<label class="form-label "> <b>Please Specify : </b></label><br> {{ $register->legal_status_other }}@endif
                                             <label class="form-label "> <b>Is the Founder/Promoter still actively involved in top management? :</b></label><br> {{ $register->founder_active?'Yes':'No' }} <br>
-                                            <label class="form-label "> <b>Categories Applied for :</b></label> <br>{{ $register->category_id }}<br>
+                                            <label class="form-label "> <b>Categories Applied for :</b></label> <br>{{ $register->category }}<br>
                                         </td>
                                         <td class="text-nowrap">
                                             <label class="form-label "> <b>Why do you think your outlet is best in the category/categories you have contested for? : </b></label> <br>{{ $register->category_remark }}<br>
@@ -77,10 +83,14 @@
                                             <label class="form-label "> <b>Do you accept cashless payment modes like Debit/ Credit Card, eWallets etc. at your outlet? : </b></label> <br>{{ $register->cashless?'Yes':'No' }}<br>
                                         </td>
                                         <td class="text-nowrap">
-                                            <label class="form-label "> <b>What are the different advertising modules have you opted so far to promote your Outlet? : </b></label> <br>{{ $register->advertise_name }}<br>
+                                            <label class="form-label "> <b>What are the different advertising modules have you opted so far to promote your Outlet? : </b></label> <br>{{ $register->advertise }}<br>
                                         </td>
                                         <td class="text-nowrap">
-                                            <label class="form-label "> <b>Please mention your outlet’s rating on the following platforms? : </b></label> <br>{{ $register->outlet_rating_name }}<br>
+                                            <label class="form-label "> <b>Please mention your outlet’s rating on the following platforms? : </b></label> <br>{{ $register->outlet_rating }}<br>
+                                            <label class="form-label "> <b>Google : </b></label> <br>{{ $register->google_rating }}<br>
+                                            <label class="form-label "> <b>Facebook : </b></label><br>{{ $register->facebook_rating }} <br>
+                                            <label class="form-label "> <b>Zomato :</b></label> <br>{{ $register->zomato_rating }} <br>
+                                            <label class="form-label "> <b>Swiggy :</b></label> <br>{{ $register->swiggy_rating }}<br>
                                         </td>
                                         <td class="text-nowrap">
                                             <label class="form-label "> <b>How did you get your idea or concept for the business? : </b></label> <br>{{ $register->business_concept }}<br>
@@ -106,14 +116,13 @@
                                 @endforeach
                             </tbody>
                         </table>
-                        
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center">
-                {{ $registered->links() }}
-            </div>
         </div>
     </div>
+</div>
+<div class="d-flex justify-content-center">
+    {{ $registered->links() }}
 </div>
 @endsection

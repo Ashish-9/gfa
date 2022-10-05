@@ -24,17 +24,31 @@ class CreateRegistrationsTable extends Migration
             $table->string('mobile');
             $table->string('email');
             $table->string('website');
+            $table->string('fran_type');
+            $table->string('food_type_veg')->nullable();
+            $table->string('food_type_non_veg')->nullable();
+            $table->string('order_value_type');
+            $table->string('service_type_delivery')->nullable();
+            $table->string('service_type_dine')->nullable();
+            $table->string('service_type_take')->nullable();
+            $table->string('available_in_swiggy')->nullable();
+            $table->string('available_in_zomato')->nullable();
+            $table->string('available_in_none')->nullable();
             $table->string('business_start_year');
-            $table->bigInteger('legal_status_id');
+            $table->string('legal_status');
+            $table->string('legal_status_other')->nullable();
             $table->boolean('founder_active');
-            $table->bigInteger('category_id');
+            $table->string('category');
             $table->string('category_remark');
             $table->string('dish_proud');
             $table->string('add_dish');
             $table->string('improve_dish');
             $table->boolean('cashless');
-            $table->bigInteger('advertise_id');
-            $table->bigInteger('outlet_rating_id');
+            $table->string('advertise');
+            $table->string('google_rating');
+            $table->string('facebook_rating');
+            $table->string('zomato_rating');
+            $table->string('swiggy_rating');
             $table->string('business_concept');
             $table->string('previous_gfa');
             $table->string('previous_gfa_year')->nullable();
@@ -47,9 +61,6 @@ class CreateRegistrationsTable extends Migration
             $table->boolean('status')->default(true);
             $table->timestamps();
 
-            $table->foreign('legal_status_id')->references('id')->on('public.legal_status');
-            $table->foreign('advertise_id')->references('id')->on('public.advertise');
-            $table->foreign('outlet_rating_id')->references('id')->on('public.outlet_rating');
         });
     }
 

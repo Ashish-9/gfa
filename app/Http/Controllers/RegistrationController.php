@@ -38,6 +38,7 @@ class RegistrationController extends Controller
     public function store(Request $request)
     {
         if($request->isMethod('post')){
+            // return $request;
             try{
                 $register = new Registration();
                 $register->name_of_enterprise = $request->name_of_enterprise;
@@ -49,17 +50,32 @@ class RegistrationController extends Controller
                 $register->mobile = $request->mobile;
                 $register->email = $request->email;
                 $register->website = $request->website;
+                $register->fran_type = $request->fran_type;
+                $register->food_type_veg = $request->food_type_veg;
+                $register->food_type_non_veg = $request->food_type_non_veg;
+                $register->order_value_type = $request->order_value_type;
+                $register->service_type_delivery = $request->service_type_delivery;
+                $register->service_type_dine = $request->service_type_dine;
+                $register->service_type_take = $request->service_type_take;
+                $register->available_in_swiggy = $request->available_in_swiggy;
+                $register->available_in_zomato = $request->available_in_zomato;
+                $register->available_in_none = $request->available_in_none;
                 $register->business_start_year = $request->business_start_year;
-                $register->legal_status_id = $request->legal_status;
+                $register->legal_status = $request->legal_status;
+                $register->legal_status_other = $request->legal_status_other;
                 $register->founder_active = $request->founder_active;
-                $register->category_id = $request->category_id;
+                $register->category = $request->category;
                 $register->category_remark = $request->category_remark;
                 $register->dish_proud = $request->dish_proud;
                 $register->add_dish = $request->add_dish;
                 $register->improve_dish = $request->improve_dish;
                 $register->cashless = $request->cashless;
-                $register->advertise_id = $request->advertise_id;
-                $register->outlet_rating_id = $request->outlet_rating_id;
+                $register->advertise = $request->advertise;
+                $register->google_rating = $request->google_rating;
+                $register->facebook_rating = $request->facebook_rating;
+                $register->zomato_rating = $request->zomato_rating;
+                $register->swiggy_rating = $request->swiggy_rating;
+                $register->google_rating = $request->google_rating;
                 $register->business_concept = $request->business_concept;
                 $register->previous_gfa = $request->previous_gfa;
                 $register->previous_gfa_year = $request->previous_gfa_year;
@@ -70,8 +86,6 @@ class RegistrationController extends Controller
                 $register->bank_name = $request->bank_name;
                 $register->summary = $request->summary;
                 $register->created_at = now();
-
-
                 if($register->save()){
                     return redirect()->back()->with('message','Registration Completed Successfully!');
                 }
