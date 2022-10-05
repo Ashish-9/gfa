@@ -64,7 +64,32 @@ class RegistrationController extends Controller
                 $register->legal_status = $request->legal_status;
                 $register->legal_status_other = $request->legal_status_other;
                 $register->founder_active = $request->founder_active;
-                $register->category = $request->category;
+                $register->best_bakery = $request->best_bakery;
+                $register->best_cafe = $request->best_cafe;
+                $register->best_club = $request->best_club;
+                $register->best_bar = $request->best_bar;
+                $register->best_fast_food = $request->best_fast_food;
+                $register->best_mithai = $request->best_mithai;
+                $register->best_multi = $request->best_multi;
+                $register->best_for_assamese = $request->best_for_assamese;
+                $register->best_for_european = $request->best_for_european;
+                $register->best_for_north = $request->best_for_north;
+                $register->best_for_ethnic = $request->best_for_ethnic;
+                $register->best_for_south = $request->best_for_south;
+                $register->best_cloud = $request->best_cloud;
+                $register->best_for_veg = $request->best_for_veg;
+                $register->most_instagrammable = $request->most_instagrammable;
+                $register->best_open_air = $request->best_open_air;
+                $register->best_hangout = $request->best_hangout;
+                $register->best_for_fine = $request->best_for_fine;
+                $register->bartender_of_year = $request->bartender_of_year;
+                $register->most_hygienic = $request->most_hygienic;
+                $register->promising_new = $request->promising_new;
+                $register->best_brand = $request->best_brand;
+                $register->best_dessert = $request->best_dessert;
+                $register->best_for_oriental = $request->best_for_oriental;
+                $register->most_accessible = $request->most_accessible;
+                $register->restaurant_of_year = $request->restaurant_of_year;
                 $register->category_remark = $request->category_remark;
                 $register->dish_proud = $request->dish_proud;
                 $register->add_dish = $request->add_dish;
@@ -86,6 +111,7 @@ class RegistrationController extends Controller
                 $register->bank_name = $request->bank_name;
                 $register->summary = $request->summary;
                 $register->created_at = now();
+                // return $register;
                 if($register->save()){
                     return redirect()->back()->with('message','Registration Completed Successfully!');
                 }

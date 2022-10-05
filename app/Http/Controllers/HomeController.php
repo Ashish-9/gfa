@@ -31,7 +31,7 @@ class HomeController extends Controller
         $registered = Registration::where('status', true)
                         ->orderBy('created_at')
                         ->simplePaginate(2);
-        return $registered;
+        // return $registered;
         return view('home', ['registered'=>$registered]);
     }
 

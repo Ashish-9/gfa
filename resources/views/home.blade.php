@@ -55,17 +55,52 @@
                                             <label class="form-label "> <b>Email: </b></label><br> {{ $register->email }}<br>
                                             <label class="form-label "> <b>Website: </b></label> <br>{{ $register->website }}<br>
                                             <label class="form-label "> <b>Type of Restaurant: </b></label> <br>{{ $register->fran_type?'Franchise':'Non-Franchise' }}<br>
-                                            <label class="form-label "> <b>Menu Options: </b></label> <br>{{ $register->food_type }}<br>
+                                            <label class="form-label "> <b><u>Menu Options:- </u></b></label> <br>
+                                                <label class="form-label "> <b>Veg: </b></label> {{ $register->food_type_veg ? 'Yes':'No'}}<br>
+                                                <label class="form-label "> <b>Non-Veg: </b></label> {{ $register->food_type_non_veg ? 'Yes':'No' }}<br>
                                             <label class="form-label "> <b>Average Order Value per person: </b></label> <br>{{ $register->order_value_type }}<br>
-                                            <label class="form-label "> <b>Service: </b></label> <br>{{ $register->service_type }}<br>
-                                            <label class="form-label "> <b>Available in: </b></label> <br>{{ $register->available_in }}<br>
+                                            <label class="form-label "> <b><u>Services:- </u></b></label> <br>
+                                                <label class="form-label "> <b>Delivery: </b></label> {{ $register->service_type_delivery ? 'Yes':'No'}}<br>
+                                                <label class="form-label "> <b>Dine-In: </b></label> {{ $register->service_type_dine ? 'Yes':'No' }}<br>
+                                                <label class="form-label "> <b>Take-Away: </b></label> {{ $register->service_type_take ? 'Yes':'No' }}<br>
+                                            <label class="form-label "> <b><u>Available in: </u></b></label> <br>
+                                                <label class="form-label "> <b>Swiggy: </b></label> {{ $register->available_in_swiggy ? 'Yes':'No'}}<br>
+                                                <label class="form-label "> <b>Zomato: </b></label> {{ $register->available_in_zomato ? 'Yes':'No' }}<br>
+                                                <label class="form-label "> <b>None: </b></label> {{ $register->available_in_none ? 'Yes':'No' }}<br>
                                         </td>
                                         <td class="text-nowrap">
                                             <label class="form-label "> <b>In which month/ year was the business started? : </b></label> <br>{{ $register->business_start_year }}<br>
                                             <label class="form-label "> <b>What is the legal status of the Enterprise? : </b></label><br>{{ $register->legal_status }} <br>
                                             @if($register->legal_status == 'Other')<label class="form-label "> <b>Please Specify : </b></label><br> {{ $register->legal_status_other }}@endif
                                             <label class="form-label "> <b>Is the Founder/Promoter still actively involved in top management? :</b></label><br> {{ $register->founder_active?'Yes':'No' }} <br>
-                                            <label class="form-label "> <b>Categories Applied for :</b></label> <br>{{ $register->category }}<br>
+                                            <label class="form-label "> <b>Categories Applied for :</b></label> <br>
+                                                @if($register->best_bakery == 'Yes')<label class="form-label "><b>Best Bakery :</b></label> {{ $register->best_bakery }} <br>@endif
+                                                @if($register->best_cafe == 'Yes')<label class="form-label "><b>Best Café :</b></label> {{ $register->best_cafe }} <br>@endif
+                                                @if($register->best_club == 'Yes')<label class="form-label "><b>Best Club/ Lounge :</b></label> {{ $register->best_club }} <br>@endif
+                                                @if($register->best_bar == 'Yes')<label class="form-label "><b>Best Pub/ Bar :</b></label> {{ $register->best_bar }} <br>@endif
+                                                @if($register->best_fast_food == 'Yes')<label class="form-label "><b>Best Fast Food Joint :</b></label> {{ $register->best_fast_food }} <br>@endif
+                                                @if($register->best_mithai == 'Yes')<label class="form-label "><b>Best Mithai Shop :</b></label> {{ $register->best_mithai }} <br>@endif
+                                                @if($register->best_multi == 'Yes')<label class="form-label "><b>Best Multi-Cuisine Restaurant :</b></label> {{ $register->best_multi }} <br>@endif
+                                                @if($register->best_for_assamese == 'Yes')<label class="form-label "><b>Best Restaurant For Assamese Cuisine :</b></label> {{ $register->best_for_assamese }} <br>@endif
+                                                @if($register->best_for_european == 'Yes')<label class="form-label "><b>Best Restaurant For European Cuisine (Continental) :</b></label> {{ $register->best_for_european }} <br>@endif
+                                                @if($register->best_for_north == 'Yes')<label class="form-label "><b>Best Restaurant for North Indian Cuisine :</b></label> {{ $register->best_for_north }} <br>@endif
+                                                @if($register->best_for_ethnic == 'Yes')<label class="form-label "><b>Best Restaurant for Ethnic Cuisine :</b></label> {{ $register->best_for_ethnic }} <br>@endif
+                                                @if($register->best_for_south == 'Yes')<label class="form-label "><b>Best Restaurant For South Indian Cuisine :</b></label> {{ $register->best_for_south }} <br>@endif
+                                                @if($register->best_cloud == 'Yes')<label class="form-label "><b>Best Cloud Kitchen of the Year :</b></label> {{ $register->best_cloud }} <br>@endif
+                                                @if($register->best_for_veg == 'Yes')<label class="form-label "><b>Best Restaurant For Vegetarian Food :</b></label> {{ $register->best_for_veg }} <br>@endif
+                                                @if($register->most_instagrammable == 'Yes')<label class="form-label "><b>Most Instagrammable Restaurant :</b></label> {{ $register->most_instagrammable }} <br>@endif
+                                                @if($register->best_open_air == 'Yes')<label class="form-label "><b>Best Open-Air Space :</b></label> {{ $register->best_open_air }} <br>@endif
+                                                @if($register->best_hangout == 'Yes')<label class="form-label "><b>Best Hangout Place :</b></label> {{ $register->best_hangout }} <br>@endif
+                                                @if($register->best_for_fine == 'Yes')<label class="form-label "><b>Best Restaurant for Fine Dining :</b></label> {{ $register->best_for_fine }} <br>@endif
+                                                @if($register->bartender_of_year == 'Yes')<label class="form-label "><b>BarTender of the Year :</b></label> {{ $register->bartender_of_year }} <br>@endif
+                                                @if($register->most_hygienic == 'Yes')<label class="form-label "><b>Most Hygienic and Sanitised Restaurants :</b></label> {{ $register->most_hygienic }} <br>@endif
+                                                @if($register->promising_new == 'Yes')<label class="form-label "><b>Promising New Entrant :</b></label> {{ $register->promising_new }} <br>@endif
+                                                @if($register->best_brand == 'Yes')<label class="form-label "><b>Best Brand for home Delivery :</b></label> {{ $register->best_brand }} <br>@endif
+                                                @if($register->best_dessert == 'Yes')<label class="form-label "><b>Best Dessert & Ice Cream Parlour :</b></label> {{ $register->best_dessert }} <br>@endif
+                                                @if($register->best_for_oriental == 'Yes')<label class="form-label "><b>Best Restaurant For Oriental Cuisine :</b></label> {{ $register->best_for_oriental }} <br>@endif
+                                                @if($register->most_accessible == 'Yes')<label class="form-label "><b>Most Accessible Restaurant :</b></label> {{ $register->most_accessible }} <br>@endif
+                                                @if($register->restaurant_of_year == 'Yes')<label class="form-label "><b>Restaurant of the Year :</b></label> {{ $register->restaurant_of_year }} <br>@endif
+
                                         </td>
                                         <td class="text-nowrap">
                                             <label class="form-label "> <b>Why do you think your outlet is best in the category/categories you have contested for? : </b></label> <br>{{ $register->category_remark }}<br>

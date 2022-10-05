@@ -372,134 +372,133 @@
                                                     apply for up to 5 categories only)</label>
                                                 <div class="checkbox-area">
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Bakery" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check"  name="best_bakery" value="Yes"
+                                                            id="category_id1">
                                                         <label for="remember">Best Bakery</label>
                                                     </div>
-
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Café" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_cafe" value="Yes"
+                                                            id="category_id2">
                                                         <label for="remember">Best Café</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Club/ Lounge" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_club" value="Yes"
+                                                            id="category_id3">
                                                         <label for="remember">Best Club/ Lounge</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Pub/ Bar" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_bar" value="Yes"
+                                                            id="category_id4">
                                                         <label for="remember">Best Pub/ Bar</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Fast Food Joint" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_fast_food" value="Yes"
+                                                            id="category_id5">
                                                         <label for="remember">Best Fast Food Joint</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Mithai Shop" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_mithai" value="Yes"
+                                                            id="category_id6">
                                                         <label for="remember">Best Mithai Shop</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Multi-Cuisine Restaurant" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_multi" value="Yes"
+                                                            id="category_id7">
                                                         <label for="remember">Best Multi-Cuisine Restaurant</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Restaurant For Assamese Cuisine" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_for_assamese" value="Yes"
+                                                            id="category_id8">
                                                         <label for="remember">Best Restaurant For Assamese Cuisine</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Restaurant For European Cuisine (Continental)" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_for_european" value="Yes"
+                                                            id="category_id9">
                                                         <label for="remember">Best Restaurant For European Cuisine (Continental)</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Restaurant for North Indian Cuisine" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_for_north" value="Yes"
+                                                            id="category_id10">
                                                         <label for="remember">Best Restaurant for North Indian Cuisine</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Restaurant for Ethnic Cuisine" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_for_ethnic" value="Yes"
+                                                            id="category_id11">
                                                         <label for="remember">Best Restaurant for Ethnic Cuisine</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Restaurant For South Indian Cuisine" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_for_south" value="Yes"
+                                                            id="category_id12">
                                                         <label for="remember">Best Restaurant For South Indian Cuisine</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Cloud Kitchen of the Year" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_cloud" value="Yes"
+                                                            id="category_id13">
                                                         <label for="remember">Best Cloud Kitchen of the Year</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Restaurant For Vegetarian Food" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_for_veg" value="Yes"
+                                                            id="category_id14">
                                                         <label for="remember">Best Restaurant For Vegetarian Food</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Most Instagrammable Restaurant" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="most_instagrammable" value="Yes"
+                                                            id="category_id15">
                                                         <label for="remember">Most Instagrammable Restaurant</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Open-Air Space" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_open_air" value="Yes"
+                                                            id="category_id16">
                                                         <label for="remember">Best Open-Air Space</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Hangout Place" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_hangout" value="Yes"
+                                                            id="category_id17">
                                                         <label for="remember">Best Hangout Place</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Restaurant for Fine Dining" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check"  name="best_for_fine" value="Yes"
+                                                            id="category_id18">
                                                         <label for="remember">Best Restaurant for Fine Dining</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="BarTender of the Year" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="bartender_of_year" value="Yes"
+                                                            id="category_id19">
                                                         <label for="remember">BarTender of the Year</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Most Hygienic and Sanitised Restaurants" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="most_hygienic" value="Yes"
+                                                            id="category_id20">
                                                         <label for="remember">Most Hygienic and Sanitised Restaurants</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Promising New Entrant" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="promising_new" value="Yes"
+                                                            id="category_id21">
                                                         <label for="remember">Promising New Entrant</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Brand for home Delivery" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_brand" value="Yes"
+                                                            id="category_id22">
                                                         <label for="remember">Best Brand for home Delivery</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Dessert & Ice Cream Parlour" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_dessert" value="Yes"
+                                                            id="category_id23">
                                                         <label for="remember">Best Dessert & Ice Cream Parlour</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Best Restaurant For Oriental Cuisine" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="best_for_oriental" value="Yes"
+                                                            id="category_id24">
                                                         <label for="remember">Best Restaurant For Oriental Cuisine</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Most Accessible Restaurant" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="most_accessible" value="Yes"
+                                                            id="category_id25">
                                                         <label for="remember">Most Accessible Restaurant</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" value="Restaurant of the Year" name="category"
-                                                            id="category_id">
+                                                        <input type="checkbox" class="cat_check" name="restaurant_of_year" value="Yes"
+                                                            id="category_id26">
                                                         <label for="remember">Restaurant of the Year</label>
                                                     </div>
                                                 </div>
@@ -901,6 +900,20 @@
                 return false;
             return true;
         }
+    </script>
+    <script>
+       var checks = document.querySelectorAll(".cat_check");
+            var max = 5;
+            for (var i = 0; i < checks.length; i++)
+            checks[i].onclick = selectiveCheck;
+            function selectiveCheck (event) {
+            var checkedChecks = document.querySelectorAll(".cat_check:checked");
+            if (checkedChecks.length >= max + 1)
+                return false;
+                if(checkedChecks.length == max){
+                    alert("Can apply for up to 5 categories only!");
+                }
+            }
     </script>
    
     <script>
