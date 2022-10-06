@@ -110,6 +110,7 @@ class RegistrationController extends Controller
                 $register->isp_name = $request->isp_name;
                 $register->bank_name = $request->bank_name;
                 $register->summary = $request->summary;
+                $register->transaction_id = $request->transaction_id;
                 $register->created_at = now();
                 // return $register;
                 if($register->save()){

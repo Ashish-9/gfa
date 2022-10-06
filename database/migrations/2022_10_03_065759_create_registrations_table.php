@@ -83,6 +83,7 @@ class CreateRegistrationsTable extends Migration
             $table->text('isp_name');
             $table->text('bank_name');
             $table->text('summary');
+            $table->text('transaction_id');
             $table->boolean('status')->default(true);
             $table->timestamps();
 

@@ -36,6 +36,7 @@
                                     <th scope="col">Have you participated in the previous editions of Guwahati Food Awards?</th>
                                     <th scope="col">Other Information about the Enterprise</th>
                                     <th scope="col">Summary of your Enterprise</th>
+                                    <th scope="col">Payment</th>
                                     <th scope="col">Status</th>
 
                                 </tr>
@@ -143,6 +144,10 @@
                                         </td>
                                         <td class="text-nowrap">
                                             <label class="form-label "> <b>Summary of your Enterprise : </b></label> <br>{{ $register->summary }}<br>
+                                        </td>
+                                        <td class="text-nowrap">
+                                            <label class="form-label "> <b>Payment : </b></label> <br>{{ $register->transaction_id?'Paid':'Not Paid' }}<br>
+                                            @if($register->transaction_id)<label class="form-label "> <b>Transaction Id : </b></label><br> {{ $register->transaction_id }}@endif
                                         </td>
                                         <td class="text-nowrap">
                                             <label class="form-label "> <b>Status : </b></label> <br>{{ $register->status?'Active':'Deactive' }}<br>

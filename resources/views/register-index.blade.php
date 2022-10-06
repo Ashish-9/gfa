@@ -846,7 +846,19 @@
                                                             <li>IFSC: <b>UTIB0000375</b></li>
                                                         </ul>
                                                     </p>
-                                                    <p id="amount" style="font-weight: bold;"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="separator">
+                                        <div class="box-wrap">
+                                            <p id="amount" style="font-weight: bold;"></p>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 wow fadeInUp">
+                                                    <label>15) Enter the transaction id of the payment:
+                                                    </label>
+                                                    <input name="transaction_id" type="text" placeholder=""
+                                                        required>
                                                 </div>
                                             </div>
                                         </div>
