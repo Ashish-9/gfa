@@ -194,13 +194,13 @@
                                             <div class="checkbox-area">
                                                 <div class="checkbox-part">
                                                     <input type="radio" value="Veg" name="food_type_veg"
-                                                        id="Veg" >
+                                                        id="Veg">
                                                     <label for="remember">Veg</label>
                                                 </div>
 
                                                 <div class="checkbox-part">
                                                     <input type="radio" value="Non-Veg" name="food_type_non_veg"
-                                                        id="Non-Veg" >
+                                                        id="Non-Veg">
                                                     <label for="remember">Non-Veg</label>
                                                 </div>
                                             </div>
@@ -237,19 +237,19 @@
                                             <label>Service: (can select multiple)</label>
                                             <div class="checkbox-area">
                                                 <div class="checkbox-part">
-                                                    <input type="radio" value="Delivery" name="service_type_delivery"
-                                                        id="service_type_delivery" >
+                                                    <input type="radio" value="Delivery"
+                                                        name="service_type_delivery" id="service_type_delivery">
                                                     <label for="remember">Delivery</label>
                                                 </div>
 
                                                 <div class="checkbox-part">
                                                     <input type="radio" value="Dine-In" name="service_type_dine"
-                                                        id="service_type_dine" >
+                                                        id="service_type_dine">
                                                     <label for="remember">Dine-In</label>
                                                 </div>
                                                 <div class="checkbox-part">
                                                     <input type="radio" value="Take-Away" name="service_type_take"
-                                                        id="service_type_take" >
+                                                        id="service_type_take">
                                                     <label for="remember">Take-Away</label>
                                                 </div>
                                             </div>
@@ -260,18 +260,18 @@
                                             <div class="checkbox-area">
                                                 <div class="checkbox-part">
                                                     <input type="radio" value="Swiggy" name="available_in_swiggy"
-                                                        id="available_in_swiggy" >
+                                                        id="available_in_swiggy">
                                                     <label for="remember">Swiggy</label>
                                                 </div>
 
                                                 <div class="checkbox-part">
                                                     <input type="radio" value="Zomato" name="available_in_zomato"
-                                                        id="available_in_zomato" >
+                                                        id="available_in_zomato">
                                                     <label for="remember">Zomato</label>
                                                 </div>
                                                 <div class="checkbox-part">
                                                     <input type="radio" value="None" name="available_in_none"
-                                                        id="available_in_none" >
+                                                        id="available_in_none">
                                                     <label for="remember">None</label>
                                                 </div>
                                             </div>
@@ -291,7 +291,8 @@
 
                                             <div class="col-lg-6 col-md-6 wow fadeInUp">
                                                 <label>a) In which month/ year was the business started?</label>
-                                                <input name="business_start_year" type="month" value="<?=date('Y-m')?>" placeholder="Select Month and Year"
+                                                <input name="business_start_year" type="month"
+                                                    value="<?= date('Y-m') ?>" placeholder="Select Month and Year"
                                                     required>
                                             </div>
 
@@ -309,7 +310,8 @@
 
                                                     <div class="checkbox-part">
                                                         <input type="radio" name="legal_status"
-                                                            value="Public Limited Company" id="legal_status2" required>
+                                                            value="Public Limited Company" id="legal_status2"
+                                                            required>
                                                         <label for="remember">Public Limited Company</label>
                                                     </div>
 
@@ -321,7 +323,7 @@
 
                                                     <div class="checkbox-part">
                                                         <input type="radio" name="legal_status" value="Partnership"
-                                                        id="legal_status4" required>
+                                                            id="legal_status4" required>
                                                         <label for="remember">Partnership</label>
                                                     </div>
 
@@ -372,134 +374,212 @@
                                                     apply for up to 5 categories only)</label>
                                                 <div class="checkbox-area">
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check"  name="best_bakery" value="Yes"
-                                                            id="category_id1">
-                                                        <label for="remember">Best Bakery</label>
+                                                        <input type="checkbox"  class="cat_check" name="best_bakery"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Bakery</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_cafe" value="Yes"
-                                                            id="category_id2">
-                                                        <label for="remember">Best Café</label>
+                                                        <input type="checkbox" class="cat_check" name="best_cafe"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Café</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_club" value="Yes"
-                                                            id="category_id3">
-                                                        <label for="remember">Best Club/ Lounge</label>
+                                                        <input type="checkbox" class="cat_check" name="best_club"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Club/ Lounge</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_bar" value="Yes"
-                                                            id="category_id4">
-                                                        <label for="remember">Best Pub/ Bar</label>
+                                                        <input type="checkbox" class="cat_check" name="best_bar"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Pub/ Bar</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_fast_food" value="Yes"
-                                                            id="category_id5">
-                                                        <label for="remember">Best Fast Food Joint</label>
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="best_fast_food" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Fast Food Joint</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_mithai" value="Yes"
-                                                            id="category_id6">
-                                                        <label for="remember">Best Mithai Shop</label>
+                                                        <input type="checkbox" class="cat_check" name="best_mithai"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Mithai Shop</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_multi" value="Yes"
-                                                            id="category_id7">
-                                                        <label for="remember">Best Multi-Cuisine Restaurant</label>
+                                                        <input type="checkbox" class="cat_check" name="best_multi"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Multi-Cuisine Restaurant</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_for_assamese" value="Yes"
-                                                            id="category_id8">
-                                                        <label for="remember">Best Restaurant For Assamese Cuisine</label>
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="best_for_assamese" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Restaurant For Assamese
+                                                            Cuisine</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_for_european" value="Yes"
-                                                            id="category_id9">
-                                                        <label for="remember">Best Restaurant For European Cuisine (Continental)</label>
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="best_for_european" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Restaurant For European Cuisine
+                                                            (Continental)</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_for_north" value="Yes"
-                                                            id="category_id10">
-                                                        <label for="remember">Best Restaurant for North Indian Cuisine</label>
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="best_for_north" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Restaurant for North Indian
+                                                            Cuisine</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_for_ethnic" value="Yes"
-                                                            id="category_id11">
-                                                        <label for="remember">Best Restaurant for Ethnic Cuisine</label>
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="best_for_ethnic" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Restaurant for Ethnic
+                                                            Cuisine</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_for_south" value="Yes"
-                                                            id="category_id12">
-                                                        <label for="remember">Best Restaurant For South Indian Cuisine</label>
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="best_for_south" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Restaurant For South Indian
+                                                            Cuisine</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_cloud" value="Yes"
-                                                            id="category_id13">
-                                                        <label for="remember">Best Cloud Kitchen of the Year</label>
+                                                        <input type="checkbox" class="cat_check" name="best_cloud"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Cloud Kitchen of the Year</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_for_veg" value="Yes"
-                                                            id="category_id14">
-                                                        <label for="remember">Best Restaurant For Vegetarian Food</label>
+                                                        <input type="checkbox" class="cat_check" name="best_for_veg"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Restaurant For Vegetarian
+                                                            Food</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="most_instagrammable" value="Yes"
-                                                            id="category_id15">
-                                                        <label for="remember">Most Instagrammable Restaurant</label>
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="most_instagrammable" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Most Instagrammable Restaurant</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_open_air" value="Yes"
-                                                            id="category_id16">
-                                                        <label for="remember">Best Open-Air Space</label>
+                                                        <input type="checkbox" class="cat_check" name="best_open_air"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Open-Air Space</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_hangout" value="Yes"
-                                                            id="category_id17">
-                                                        <label for="remember">Best Hangout Place</label>
+                                                        <input type="checkbox" class="cat_check" name="best_hangout"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Hangout Place</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check"  name="best_for_fine" value="Yes"
-                                                            id="category_id18">
-                                                        <label for="remember">Best Restaurant for Fine Dining</label>
+                                                        <input type="checkbox" class="cat_check" name="best_for_fine"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Restaurant for Fine Dining</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="bartender_of_year" value="Yes"
-                                                            id="category_id19">
-                                                        <label for="remember">BarTender of the Year</label>
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="best_for_oriental" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Restaurant For Oriental
+                                                            Cuisine</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="most_hygienic" value="Yes"
-                                                            id="category_id20">
-                                                        <label for="remember">Most Hygienic and Sanitised Restaurants</label>
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="best_in_healthy" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best in Healthy Food</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="promising_new" value="Yes"
-                                                            id="category_id21">
-                                                        <label for="remember">Promising New Entrant</label>
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="bartender_of_year" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">BarTender of the Year</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_brand" value="Yes"
-                                                            id="category_id22">
-                                                        <label for="remember">Best Brand for home Delivery</label>
+                                                        <input type="checkbox" class="cat_check" name="most_hygienic"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Most Hygienic and Sanitised
+                                                            Restaurants</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_dessert" value="Yes"
-                                                            id="category_id23">
-                                                        <label for="remember">Best Dessert & Ice Cream Parlour</label>
+                                                        <input type="checkbox" class="cat_check" name="promising_new"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Promising New Entrant</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="best_for_oriental" value="Yes"
-                                                            id="category_id24">
-                                                        <label for="remember">Best Restaurant For Oriental Cuisine</label>
+                                                        <input type="checkbox" class="cat_check" name="best_brand"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Brand for home Delivery</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="most_accessible" value="Yes"
-                                                            id="category_id25">
-                                                        <label for="remember">Most Accessible Restaurant</label>
+                                                        <input type="checkbox" class="cat_check" name="best_dessert"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Dessert & Ice Cream Parlour</label>
                                                     </div>
                                                     <div class="checkbox-part">
-                                                        <input type="checkbox" class="cat_check" name="restaurant_of_year" value="Yes"
-                                                            id="category_id26">
-                                                        <label for="remember">Restaurant of the Year</label>
+                                                        <input type="checkbox" class="cat_check" name="best_micro"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Microbrewery of the Year</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check" name="best_gigs"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Brand with Live Gigs</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check" name="best_family"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Family Friendly Restaurant</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check" name="best_qsr"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best QSR Brand</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check" name="best_biryani"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Biryani Brand of the Year</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check" name="best_money"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Value of Money Restaurant</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check" name="best_barbeque"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Barbeque Brand</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="best_local_chain" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Restaurant Chain (Local)</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="best_brand_chain" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Best Restaurant Chain (Brand)</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check" name="best_inno"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Setting Benchmark Through Innovation</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="best_home_baker" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Home Baker of the Year</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="most_accessible" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Most Accessible Restaurant</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="restaurant_of_year" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Restaurant of the Year</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check"
+                                                            name="best_home_chef" value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Home Chef of the Year</label>
+                                                    </div>
+                                                    <div class="checkbox-part">
+                                                        <input type="checkbox" class="cat_check" name="best_chef"
+                                                            value="Yes">
+                                                        <label style="margin-top: 5px; margin-left: 5px;" for="remember">Chef of the Year</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -639,12 +719,12 @@
                                                             <li>
                                                                 <div class="row">
                                                                     <div class="col-md-4">Google</div>
-                                                                        <div class="col-lg-6 col-md-6">
-                                                                            <input name="google_rating"
-                                                                                type="number" min="0" max="10" step="0.1" placeholder=""
-                                                                                required>
-                                                                        </div>
+                                                                    <div class="col-lg-6 col-md-6">
+                                                                        <input name="google_rating" type="number"
+                                                                            min="0" max="10"
+                                                                            step="0.1" placeholder="" required>
                                                                     </div>
+                                                                </div>
                                                             </li>
                                                             <li>
                                                                 <div class="row">
@@ -652,8 +732,9 @@
                                                                     </div>
 
                                                                     <div class="col-lg-6 col-md-6">
-                                                                        <input name="facebook_rating" type="number" step="0.1" min="0" max="10"
-                                                                            placeholder="" required>
+                                                                        <input name="facebook_rating" type="number"
+                                                                            step="0.1" min="0"
+                                                                            max="10" placeholder="" required>
                                                                     </div>
 
                                                                 </div>
@@ -664,8 +745,10 @@
                                                                     </div>
 
                                                                     <div class="col-lg-6 col-md-6"><input
-                                                                            name="zomato_rating" type="number" step="0.1" min="0" max="10"
-                                                                            placeholder="" required></div>
+                                                                            name="zomato_rating" type="number"
+                                                                            step="0.1" min="0"
+                                                                            max="10" placeholder="" required>
+                                                                    </div>
 
                                                                 </div>
                                                             </li>
@@ -674,8 +757,9 @@
                                                                     <div class="col-md-4">Swiggy</div>
 
                                                                     <div class="col-lg-6 col-md-6"><input
-                                                                            name="swiggy_rating" type="number" min="0" max="10" step="0.1"
-                                                                            placeholder=""></div>
+                                                                            name="swiggy_rating" type="number"
+                                                                            min="0" max="10"
+                                                                            step="0.1" placeholder=""></div>
 
                                                                 </div>
                                                             </li>
@@ -838,13 +922,16 @@
                                             <div class="row">
                                                 <div class="col-lg-12 col-md-12 wow fadeInUp">
                                                     <label>14) Payment details: </label>
-                                                    <p>Nomination fee of &#8377;3000/- for the first category and &#8377;1000/- only to be paid for each subsequent category. Payment can be done using UPI/Net banking to the following account before the registration process closes. 
-                                                        <ul class="bullet-point">
-                                                            <li>Account Holder Name: <b>Insight Media</b></li>
-                                                            <li>Bank Name: <b>Axis Bank</b></li>
-                                                            <li>A/C Number: <b>913020032196231</b></li>
-                                                            <li>IFSC: <b>UTIB0000375</b></li>
-                                                        </ul>
+                                                    <p>Nomination fee of &#8377;3000/- for the first category and
+                                                        &#8377;1000/- only to be paid for each subsequent category.
+                                                        Payment can be done using UPI/Net banking to the following
+                                                        account before the registration process closes.
+                                                    <ul class="bullet-point">
+                                                        <li>Account Holder Name: <b>Insight Media</b></li>
+                                                        <li>Bank Name: <b>Axis Bank</b></li>
+                                                        <li>A/C Number: <b>913020032196231</b></li>
+                                                        <li>IFSC: <b>UTIB0000375</b></li>
+                                                    </ul>
                                                     </p>
                                                 </div>
                                             </div>
@@ -895,7 +982,7 @@
     <button class="scrollup"><i class="fas fa-angle-up"></i></button>
 
     <!-- Javascript Files -->
-    
+
     <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
@@ -915,37 +1002,38 @@
         }
     </script>
     <script>
-       var checks = document.querySelectorAll(".cat_check");
-            var max = 5;
-            for (var i = 0; i < checks.length; i++)
+        var checks = document.querySelectorAll(".cat_check");
+        var max = 5;
+        for (var i = 0; i < checks.length; i++)
             checks[i].onclick = selectiveCheck;
-            function selectiveCheck (event) {
+
+        function selectiveCheck(event) {
             var checkedChecks = document.querySelectorAll(".cat_check:checked");
-            
+
             if (checkedChecks.length >= max + 1)
                 return false;
-                if(checkedChecks.length == max){
-                    alert("Can apply for up to 5 categories only!");
-                }
-                if(checkedChecks.length == 1){
-                    document.getElementById("amount").innerHTML = "";
-                    document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹3000/- Only";
-                }else if(checkedChecks.length == 2){
-                    document.getElementById("amount").innerHTML = "";
-                    document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹4000/- Only";
-                }else if(checkedChecks.length == 3){
-                    document.getElementById("amount").innerHTML = "";
-                    document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹5000/- Only";
-                }else if(checkedChecks.length == 4){
-                    document.getElementById("amount").innerHTML = "";
-                    document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹6000/- Only";
-                }else{
-                    document.getElementById("amount").innerHTML = "";
-                    document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹7000/- Only";
-                }
+            if (checkedChecks.length == max) {
+                alert("Can apply for up to 5 categories only!");
             }
+            if (checkedChecks.length == 1) {
+                document.getElementById("amount").innerHTML = "";
+                document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹3000/- Only";
+            } else if (checkedChecks.length == 2) {
+                document.getElementById("amount").innerHTML = "";
+                document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹4000/- Only";
+            } else if (checkedChecks.length == 3) {
+                document.getElementById("amount").innerHTML = "";
+                document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹5000/- Only";
+            } else if (checkedChecks.length == 4) {
+                document.getElementById("amount").innerHTML = "";
+                document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹6000/- Only";
+            } else {
+                document.getElementById("amount").innerHTML = "";
+                document.getElementById("amount").textContent += "Amount Payable for the categories applied : ₹7000/- Only";
+            }
+        }
     </script>
-   
+
     <script>
         $('#food_award_show').click(function() {
             if ($(this).attr('id') == 'food_award_show') {
@@ -978,9 +1066,6 @@
         $('#legal_status5').click(function() {
             $("#other_div").css("display", "none");
         });
-
-
-
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

@@ -101,6 +101,21 @@
                                                 @if($register->best_for_oriental == 'Yes')<label class="form-label "><b>Best Restaurant For Oriental Cuisine :</b></label> {{ $register->best_for_oriental }} <br>@endif
                                                 @if($register->most_accessible == 'Yes')<label class="form-label "><b>Most Accessible Restaurant :</b></label> {{ $register->most_accessible }} <br>@endif
                                                 @if($register->restaurant_of_year == 'Yes')<label class="form-label "><b>Restaurant of the Year :</b></label> {{ $register->restaurant_of_year }} <br>@endif
+                                                @if($register->best_in_healthy == 'Yes')<label class="form-label "><b>Best in Healthy Food :</b></label> {{ $register->best_in_healthy }} <br>@endif
+                                                @if($register->best_micro == 'Yes')<label class="form-label "><b>Best Microbrewery of the Year :</b></label> {{ $register->best_micro }} <br>@endif
+                                                @if($register->best_gigs == 'Yes')<label class="form-label "><b>Best Brand with Live Gigs :</b></label> {{ $register->best_gigs }} <br>@endif
+                                                @if($register->best_family == 'Yes')<label class="form-label "><b>Best Family Friendly Restaurant :</b></label> {{ $register->best_family }} <br>@endif
+                                                @if($register->best_qsr == 'Yes')<label class="form-label "><b>Best QSR Brand :</b></label> {{ $register->best_qsr }} <br>@endif
+                                                @if($register->best_biryani == 'Yes')<label class="form-label "><b>Biryani Brand of the Year :</b></label> {{ $register->best_biryani }} <br>@endif
+                                                @if($register->best_barbeque == 'Yes')<label class="form-label "><b>Best Barbeque Brand :</b></label> {{ $register->best_barbeque }} <br>@endif
+                                                @if($register->best_local_chain == 'Yes')<label class="form-label "><b>Best Restaurant Chain (Local) :</b></label> {{ $register->best_local_chain }} <br>@endif
+                                                @if($register->best_brand_chain == 'Yes')<label class="form-label "><b>Best Restaurant Chain (Brand) :</b></label> {{ $register->best_brand_chain }} <br>@endif
+                                                @if($register->best_inno == 'Yes')<label class="form-label "><b>Setting Benchmark Through Innovation :</b></label> {{ $register->best_inno }} <br>@endif
+                                                @if($register->best_home_baker == 'Yes')<label class="form-label "><b>Home Baker of the Year :</b></label> {{ $register->best_home_baker }} <br>@endif
+                                                @if($register->best_home_chef == 'Yes')<label class="form-label "><b>Home Chef of the Year :</b></label> {{ $register->best_home_chef }} <br>@endif
+                                                @if($register->best_chef == 'Yes')<label class="form-label "><b>Chef of the Year :</b></label> {{ $register->best_chef }} <br>@endif
+                                                @if($register->best_money == 'Yes')<label class="form-label "><b>Best Value of Money Restaurant :</b></label> {{ $register->best_money }} <br>@endif
+
 
                                         </td>
                                         <td class="text-nowrap">
