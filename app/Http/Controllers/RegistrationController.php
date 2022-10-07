@@ -18,6 +18,9 @@ class RegistrationController extends Controller
     {
         //
     }
+    public function vote(){
+        return view('comingsoon');
+    }
 
     /**
      * Show the form for creating a new resource.

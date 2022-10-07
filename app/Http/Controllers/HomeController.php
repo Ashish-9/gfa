@@ -46,4 +46,6 @@ class HomeController extends Controller
         // $pdf = PDF::loadView('print')->setPaper('a4');
         // return $pdf->inline('print_all.pdf');
     }
+
+   
 }
