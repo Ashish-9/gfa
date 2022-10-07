@@ -22,6 +22,7 @@ Route::get('/', function () {
 
 Route::match(['get', 'post'], '/registration', [RegistrationController::class, 'store'])->name('registeration');
 Route::get('/home', [HomeController::class,'index'])->name('admin.dashboard');
+Route::get('/vote', [RegistrationController::class,'vote'])->name('coming_soon');
 Route::match(['get', 'post'], '/admin/login', [HomeController::class, 'login'])->name('admin.login');
 Route::get('/admin/print', [HomeController::class, 'printAll'])->name('admin.print');
 

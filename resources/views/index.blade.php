@@ -85,15 +85,15 @@
 			<div class="desktop_menu">
 				<a href="" class="logo-small"> <img src="assets/logo-small2.png"></a>
 
-				<ul class="fixed-menu">
-					<li><a href="index#about_.htmlus" data-section="about_us">About</a>
+				<ul class="fixed-menu navbar-fixed-top">
+					<li><a href="#about_us" data-section="about_us">About</a>
 					</li>
-					<li><a href="index.html#category" data-section="category">Categories</a></li>
-					<li><a href="index.html#spons" data-section="spons">Sponsors</a></li>
-					<li><a href="index.html" data-section="every">Everything Else</a></li>
+					<li><a href="#category" data-section="category">Categories</a></li>
+					<li><a href="#spons" data-section="spons">Sponsors</a></li>
+					<li><a href="" data-section="every">Everything Else</a></li>
 					<li><a href="{{ Route('registeration') }}" data-section="every">Register</a></li>
 
-					<li><a href="https://www.guwahatifoodawards.in/voting" data-section="every">Vote Now</a></li>
+					<li><a href="{{ Route('coming_soon')}}" data-section="every">Vote Now</a></li>
 				</ul>	
 			</div>		
 
@@ -104,27 +104,27 @@
 		<article class="main-article">
 			<section class="main-section banner-section">
 				<div class="container  p-left10">
-					<header class="header">
-						<a href="index.html" class="logo"><img src="assets/logo2.png" alt="gplus logo"></a>
+					<header class="header navbar-fixed-top">
+						<a href="" class="logo"><img src="assets/logo2.png" alt="gplus logo"></a>
 						<ul class="menu-list">
-							<li><a href="index.html#about_us" data-section="about_us">About</a>
+							<li><a href="#about_us" data-section="about_us">About</a>
 							</li>
-							<li><a href="index.html#category" data-section="category">Categories</a></li>
-							<li><a href="index.html#spons" data-section="spons">Sponsors</a></li>
-							<li><a href="#" data-section="every">Everything Else</a>
+							<li><a href="#category" data-section="category">Categories</a></li>
+							<li><a href="#spons" data-section="spons">Sponsors</a></li>
+							<li><a href="#else" data-section="every">Everything Else</a>
 								<span class="right-arrow"><img src="assets/arrow.png"></span>
 								<div class="dropdown">
 									<ul>
-										<li><a href="index.html#Process" data-section="Process">Selection Process</a></li>
-										<li><a href="index.html#Glimpses" data-section="Glimpses">Event Glimpses</a> </li>
-										<li><a href="index.html#Winners" data-section="Winners">Winners 2020</a> </li>
-										<li><a href="index.html#Contact" data-section="Contact">Contact Us </a></li>
+										<li><a href="#Process" data-section="Process">Selection Process</a></li>
+										<li><a href="#Glimpses" data-section="Glimpses">Event Glimpses</a> </li>
+										<li><a href="#Winners" data-section="Winners">Winners 2020</a> </li>
+										<li><a href="#Contact" data-section="Contact">Contact Us </a></li>
 									</ul>
 								</div>
 
 							</li>
 							<li><a href="{{ Route('registeration') }}" data-section="every">Register</a></li>
-							<li><a href="comingsoon.html" data-section="every">Vote Now</a></li>
+							<li><a href="{{ Route('coming_soon')}}" data-section="every">Vote Now</a></li>
 						</ul>
 
 						<div class="menu_nav">
@@ -146,7 +146,7 @@
 							JOINT
 						</h1>
 						<ul class="link-ul">
-							<li><a href="comingsoon.html" class="register-now">Vote now</a></li>
+							<li><a href="{{ Route('coming_soon')}}" class="register-now">Vote now</a></li>
 						</ul>							
 					</div>							
 				</div><!-- container close -->
@@ -901,8 +901,8 @@
 							<div class="footer-right-box">
 								<div class="footer_link">
 									<ul>
-										<li> <a href="index.html#about_us">About </a></li>
-										<li> <a href="index.html#category">Categories </a></li>
+										<li> <a href="#about_us">About </a></li>
+										<li> <a href="#category">Categories </a></li>
 										<li> <a href="{{ Route('registeration') }}">Register </a></li>
 										<li> <a target="_blank" href="https://www.guwahatiplus.com">G Plus</a></li>
 									</ul>
@@ -919,10 +919,10 @@
 		<!-- jQuery -->
 		<script src="https://use.fontawesome.com/064df78502.js"></script>
 
-		<script src="sccs/jquery-1.11.1.min.js"></script>
-		{{-- <script src="sccs/owl.carousel.min.js"></script> --}}
-		<script src="sccs/jquery.mcustom.js"></script>
-		<script src="sccs/common.js"></script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		{{-- <script src="js/owl.carousel.min.js"></script> --}}
+		<script src="js/jquery.mcustom.js"></script>
+		<script src="js/common.js"></script>
 
 
 	</body></html>
